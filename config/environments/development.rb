@@ -11,13 +11,17 @@ Rails.application.configure do
                 # 默认值为 ActiveSupport::TaggedLogging 实例
   config.log_level = 'debug' # 日志详细等级
   config.log_tags #
+  config.session_store #:cookie_store（默认值）
+  
 
-  config.cache_classes = false # 代码 再请求时在家变更
+
+
+  config.cache_classes = false # 代码再请求时变更
 
   # Do not eager load code on boot.
   config.eager_load = false
-  puts "config.eager_load_namespaces : #{config.eager_load_namespaces}"
-  puts "config.eager_load_paths : #{config.eager_load_paths}"  
+  # puts "config.eager_load_namespaces : #{config.eager_load_namespaces}"
+  # puts "config.eager_load_paths : #{config.eager_load_paths}"  
 
   # Show full error reports.
   config.consider_all_requests_local = true

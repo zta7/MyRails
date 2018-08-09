@@ -23,14 +23,13 @@ module New
     # 应用配置会转向 config/initializers
     # 别的ruby文件会在加载骨架和gems后自动载入你的应用
 
-    secrets.secret_key_base  # 用于指定一个密钥，检查应用的会话，防止篡改。
     config.after_initialize do
       puts "初始化rails和/config/initilaizers中的所有脚本"
       puts "config.autoload_paths: #{config.autoload_paths}"
-      puts "secrets.secret_key_base: #{secrets.secret_key_base}"
     end
+    config.time_zone = 'Beijing'
     # 静态资源文件CDN 或者 想绕开浏览器对同一域名的并发连接数的限制时可以使用这个选项
-    config.asset_host = '127.0.0.2'
+    # config.asset_host = '127.0.0.2'
     # config.session_store :cookie_store, key: '_interslice_session'
     # config.middleware.use ActionDispatch::Cookies # Required for all session management
     # config.middleware.use ActionDispatch::Session::CookieStore, config.session_options
