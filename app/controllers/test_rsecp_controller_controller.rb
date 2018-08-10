@@ -1,0 +1,2 @@
+class TestRsecpControllerController < ApplicationController
+end

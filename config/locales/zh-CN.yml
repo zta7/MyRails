@@ -1,4 +1,13 @@
 "zh-CN":
+  activerecord:
+    models:
+      user: '用户'
+      tag: '标签'
+      tagging: '被标签的' 
+      adminUser: '系统用户'
+      comment: '会话'
+      admin_user: '系统用户'
+
   active_admin:
     dashboard: "控制面板"
     dashboard_welcome:
@@ -77,6 +86,7 @@
       action_label: "%{title} 被选中"
       labels:
         destroy: "删除"
+    
     comments:
       created_at: "创建于"
       resource_type: "资源类型"

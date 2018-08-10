@@ -33,6 +33,11 @@ module Demo
       #   authenticate!
       # end
 
+      get '/demo' do
+        DemoJob.perform_later
+        "DEMO"
+      end
+
       hmac_secret = 'my$ecretK3y'
       
       post '/auth/' do
@@ -40,15 +45,12 @@ module Demo
           :email     => params[:email],
           :password  => params[:password]
         ).take!
-        
-        p @user
-
         payload = {
-          
+          :email => params[:email],
+          :photo => @user.photo
         }
         token = JWT.encode payload, hmac_secret, 'HS256'
-        redis = Redis.new(host: "127.0.0.1", port: 6379, db: 1)
-        redis.set("ff", token)
+        $redis.set(params[:email], token)
       end
 
 
@@ -61,8 +63,7 @@ module Demo
           @user.tag_list.add(params[:tags],:parse => true)
 
           if @user.save
-            # p @user,@user.email
-            UserMailer.welcome_email(@user).deliver
+            UserMailer.welcome_email(@user).deliver_later
             'success send email'
           else  
           end
