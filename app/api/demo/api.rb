@@ -4,7 +4,6 @@ module Demo
       version 'v1', using: :header, vendor: 'twitter'
       format :json
       prefix :api
-
     # 早上起来试一试
     # GET POST PUT 的参数 , params[:param]
     # 图片 params[:image_file]
@@ -34,8 +33,8 @@ module Demo
       # end
 
       get '/demo' do
-        DemoJob.perform_later
-        "DEMO"
+        # DemoJob.perform_later
+        "".blank?
       end
 
       hmac_secret = 'my$ecretK3y'

@@ -32,6 +32,12 @@ gem 'redis', '~> 4.0.1'
 # ActiveJob
 gem 'sidekiq'
 
+# ChartAndDashBoard 
+gem 'blazer'
+
+# Figaro
+gem 'figaro'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'

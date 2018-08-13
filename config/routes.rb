@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   # Grape 
   mount Demo::API => '/'
+  # Blazer
+  mount Blazer::Engine, at: "blazer"
 end
