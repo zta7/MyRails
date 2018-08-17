@@ -32,8 +32,8 @@ gem 'redis', '~> 4.0.1'
 # ActiveJob
 gem 'sidekiq'
 
-# ChartAndDashBoard 
-gem 'blazer'
+# chartkick 
+gem 'chartkick'
 
 # Figaro
 gem 'figaro'

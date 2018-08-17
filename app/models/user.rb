@@ -5,4 +5,6 @@ class User < ApplicationRecord
     def self.recent(number)
         User.limit(number)
     end
+
+
 end

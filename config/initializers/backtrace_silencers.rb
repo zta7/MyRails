@@ -1,7 +1,7 @@
-# Be sure to restart your server when you modify this file.
+#修改此文件时，请务必重新启动服务器。
 
-# You can add backtrace silencers for libraries that you're using but don't wish to see in your backtraces.
+#您可以为正在使用但不希望在回溯中看到的库添加回溯消音器。
 # Rails.backtrace_cleaner.add_silencer { |line| line =~ /my_noisy_library/ }
 
-# You can also remove all the silencers if you're trying to debug a problem that might stem from framework code.
+#如果您正在尝试调试可能源于框架代码的问题，也可以删除所有消音器。
 # Rails.backtrace_cleaner.remove_silencers!

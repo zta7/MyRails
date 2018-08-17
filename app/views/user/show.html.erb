@@ -1,2 +1,6 @@
 <h1>User#show</h1>
 <p>Find me in app/views/user/show.html.erb</p>
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+
+<%= pie_chart User.group(:email).count, download: "boom" %>
+

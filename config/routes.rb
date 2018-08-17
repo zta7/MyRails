@@ -1,12 +1,9 @@
 Rails.application.routes.draw do
-  # routes
+  # routes# routes
   resources :user
-
   # Active_Admin 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   # Grape 
   mount Demo::API => '/'
-  # Blazer
-  mount Blazer::Engine, at: "blazer"
 end
