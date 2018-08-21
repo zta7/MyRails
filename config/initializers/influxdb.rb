@@ -1,5 +1,5 @@
 require 'influxdb'
-influx_config  = YAML.load_file("#{Rails.root}/config/influxdb.yml")[Rails.env]
+# influx_config  = YAML.load_file("#{Rails.root}/config/influxdb.yml")[Rails.env]
 $influxdb = InfluxDB::Client.new("rails_app", hosts: ["127.0.0.1"], port: 8088, username: "root", password: "root")
 
 # 关注 ActionController 的 process_action 通知，会收到所有的请求
