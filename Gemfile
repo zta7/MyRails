@@ -38,6 +38,12 @@ gem 'chartkick'
 # Figaro
 gem 'figaro'
 
+# e
+gem 'redis-namespace'
+gem 'redis-rails'
+
+gem 'influxdb'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
