@@ -33,3 +33,6 @@
 /.vscode/*
 # Ignore application configuration
 /config/application.yml
+
+# Ignore /shared
+/shared/* 
