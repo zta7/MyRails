@@ -42,7 +42,7 @@ gem 'figaro'
 gem 'redis-namespace'
 gem 'redis-rails'
 
-gem 'influxdb'
+# gem 'influxdb'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

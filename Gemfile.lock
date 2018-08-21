@@ -147,6 +147,7 @@ GEM
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
+    influxdb (0.6.0)
     inherited_resources (1.8.0)
       actionpack (>= 4.2, <= 5.2)
       has_scope (~> 0.6)
@@ -362,6 +363,7 @@ DEPENDENCIES
   duktape
   figaro
   grape
+  influxdb
   jbuilder (~> 2.5)
   jwt
   mini_magick
